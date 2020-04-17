@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<welcome-file-list>
+		<welcome-file>welcome.html</welcome-file>
+	</welcome-file-list>
+	<contex-param>
+		<param-name>website</param-name>
+		<param-value>www.aks.com</param-value>
+	</contex-param>
+
+	<servlet>
+		<servlet-name>defaultdata</servlet-name>
+		<servlet-class>com.ServletContexAndConfig</servlet-class>
+		<init-param>
+			<param-name>owner</param-name>
+			<param-value>Raushan-Singh</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>defaultdata</servlet-name>
+		<url-pattern>/getdefaultdata</url-pattern>
+	</servlet-mapping>
+
+</web-app>
